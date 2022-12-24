@@ -1,0 +1,194 @@
+Music
+{
+	color: white;
+	background-image: url("Dark.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+Music:before
+{
+	display: block;
+	content: "Author: "	attr(author) ", " attr(last_modified) ".            " attr(description);
+	margin-bottom: 1%;
+}
+
+Composers
+{
+	font-family: verdana;
+	display: grid;
+	grid-template-columns: 250px 250px 250px 250px 250px 250px;
+	grid-gap: 1px;
+	margin-bottom: 3%;
+	border-spacing: 5px;
+}
+
+Composers:before
+{
+	font-size: 150%;
+	display: block;
+	content: "Composers   -->";
+}
+
+Composers > Composer
+{
+	display: table;
+	border-width: 3px;
+	border-color: white;
+	border-style: solid;
+	margin: 5px;
+	width: 225px;
+}
+
+Composers > Composer:hover
+{
+    background-color: black;
+}
+
+Composers > Composer:before
+{
+	display: block;
+	content: "ID: " attr(id);
+	margin-bottom: 3%;
+}
+
+Name:before
+{
+	content: "Name: ";
+	display: inline;
+}
+
+Name:after
+{
+	display: block;
+	content: " ";
+}
+
+Composer > Last_Name:before
+{
+	content: "Last Name: ";
+	display: inline;
+}
+
+Composer > Last_Name:after
+{
+    display: block;
+    content: " ";
+}
+
+Composer > Nationality:before
+{
+    content: "Nationality: ";
+    display: inline;
+}
+
+
+Composer > Birth_Date:before
+{
+	content: "Birth Date: ";
+	display: block;
+}
+
+Composer > Birth_Date > Month:before
+{
+	content: ".";
+	display: inline;
+}
+
+Composer > Birth_Date > Year:before
+{
+	content: ".";
+	display: inline;
+}
+
+
+Works
+{
+	font-size: 100%;
+	font-family: arial;
+	display: grid;
+	grid-template-columns: 500px 500px 500px;
+	grid-gap: 1px;
+	margin-bottom: 3%;
+	border-spacing: 5px;
+}
+
+Works:before
+{
+	font-size: 200%;
+	display: block;
+	content: "Works   --->";
+}
+
+Works > Work
+{
+	display: table;
+	border-width: 3px;
+	border-color: white;
+	border-style: solid;
+	margin: 5px;
+	width: 500px;
+}
+
+Works > Work:hover
+{
+    background-color: black;
+}
+
+Work > Duration:before
+{
+	content: "Duration in hh:mm:ss format: ";
+	display: inline;
+}
+
+Work > Rank:before
+{
+	content: "Rank: ";
+	display: inline;
+}
+
+Work > YT:before
+{
+	display: block;
+	content: "URL: " attr(link);
+}
+
+Work > Composer:before
+{
+	display: block;
+	content: "Composer ID: " attr(idref);
+}
+
+Work > Type[idref = "t1"]:before
+{
+	display: inline;
+	content: "Type: Video Game";
+}
+
+Work > Type[idref = "t2"]:before
+{
+	display: inline;
+	content: "Type: Series";
+}
+
+Work > Type[idref = "t3"]:before
+{
+	display: inline;
+	content: "Type: Movie";
+}
+
+Work > Type[idref = "t4"]:before
+{
+	display: inline;
+	content: "Type: Classical";
+}
+
+Types
+{
+	visibility: hidden;
+}
+
+
+	
+
+

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema	
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.Music.org"
+	xmlns:cns="http://www.Music.org/Common"
+	xmlns:tns="http://www.Music.org"
+	elementFormDefault="unqualified">
+	
+	<xsd:import schemaLocation="Common.xsd" namespace="http://www.Music.org/Common"/>
+	
+	<xsd:element name="Music" type="tns:musicType"/>
+	
+	<xsd:complexType name="musicType">
+		<xsd:sequence>
+			<xsd:element name="Composers">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="Composer" type="tns:composerType" maxOccurs="unbounded" minOccurs="1"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Works">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="Work" type="tns:workType" maxOccurs="unbounded" minOccurs="1"/>
+						<xsd:element name="Types" type="tns:typesType"/> 
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="author" type="cns:text" use="required"/>
+		<xsd:attribute name="last_modified" type="xsd:date"/> <!-- domyślnie optional -->
+	</xsd:complexType>
+	
+	<xsd:complexType name="composerType">
+		<xsd:sequence>
+			<xsd:element name="Name" type="cns:text"/>
+			<xsd:element name="Last_Name" type="cns:text"/>
+			<xsd:element name="Nationality" type="cns:text"/>
+			<xsd:element name="Birth_Date" type="cns:date"/>
+		</xsd:sequence>
+		<xsd:attribute name="id" type="xsd:ID"/>
+	</xsd:complexType>
+	
+	<xsd:complexType name="workType">
+		<xsd:sequence>
+			<xsd:element name="Name" type="cns:text"/>
+			<xsd:element name="Duration" type="xsd:time"/>
+			<xsd:element name="YT">
+				<xsd:complexType>
+					<xsd:attribute name="link" type="cns:text"/>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Rank" type="cns:rank"/>
+			<xsd:element name="Composer">
+				<xsd:complexType>
+					<xsd:attribute name="idref" type="xsd:IDREF"/>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Type">
+			<xsd:complexType>
+					<xsd:attribute name="idref" type="xsd:IDREF"/>
+				</xsd:complexType>
+			</xsd:element>	
+		</xsd:sequence>
+		<xsd:attribute name="id" type="xsd:ID"/>
+	</xsd:complexType>
+	<xsd:complexType name="typesType">
+		<xsd:sequence>
+			<xsd:element name="Type" maxOccurs="4" minOccurs="4">
+				<xsd:complexType>
+					<xsd:simpleContent>
+						<xsd:extension base="cns:text">
+							<xsd:attribute name="id" type="xsd:ID"/>
+						</xsd:extension>
+					</xsd:simpleContent>
+				</xsd:complexType>
+		</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

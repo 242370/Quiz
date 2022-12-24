@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Quiz</title>
+    <link rel="stylesheet" href="Quiz.css"/>
+    <script src="Quiz.js" type="text/javascript"></script>
+</head>
+<body onload="init('XML\\zad3.xml')">
+<div class="container" id="container">
+    <div class="rules" id="rules">
+        - After clicking the start button you will begin to hear one of the magnificent music pieces chosen by our
+        experts.
+        <p/>
+        - You will be presented with 4 works, from which you will have to choose the one, whence
+        the playing piece originates.
+        <p/>
+        - You will have 25 seconds for that.
+        <p/>
+        - Then, after these 25 seconds you will be presented with 4 composers, and you will have to choose the one who
+        compose the still playing piece. You will have 20 seconds for that also.
+    </div>
+    <div class="score" id="score">
+        Score:
+        <span id="user-score">0</span> /
+        <span id="total-score"></span>
+        Piece:
+        <span id="piece">1</span> /
+        <span id="total-pieces"></span>
+    </div>
+    <div class="content" id="question-area">
+        <div class="start-game" id="start-game">
+            <button class="start-button" onclick="onStartButtonClick()">Start Game</button>
+        </div>
+        <div id="question-text1">What might it be?</div>
+        <div id="question-text2">Who might have written that?</div>
+        <div class="options" id="options">
+            <div class="firstButtons" id="firstButtons">
+                <button id="b1" onclick="check(1)" class="button"></button>
+                <button id="b2" onclick="check(2)" class="button"></button>
+            </div>
+            <div class="secondButtons" id="secondButtons">
+                <button id="b3" onclick="check(3)" class="button"></button>
+                <button id="b4" onclick="check(4)" class="button"></button>
+            </div>
+        </div>
+        <audio id="audio" src=""></audio>
+    </div>
+</div>
+</body>
+</html>

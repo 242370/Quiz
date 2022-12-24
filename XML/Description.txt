@@ -1,0 +1,38 @@
+Music - main element od the document, initializes delving into the most amazing world there is
+    <Attributes>
+    author - full name of the creator of this document
+    last_modified - date in YYYY-MM-DD format
+    <Elements>
+    Composers - list of some of the most incredible people
+        <Elements>
+        Composer - a representation of a single composer
+            <Attributes>
+            id - a unique idntificator, value from xsd:ID
+            <Elements>
+            Name - name of a composer, a string with at least one letter
+            Last_Name - last name of a composer, a string with at least one letter
+            Nationality - nationality of a composer, a string with at least one letter
+            Birt_Date - the date a composer was born, a cns:date type
+    Works - list of some chosen few musical masterpieces
+        <Elements>
+        Work - a single musical masterpiece
+        <Attributes>
+        id - a unique idntificator, value from xsd:ID
+        <Elements>
+           Name - a full name of a work
+           Duration - a duration of a work in hh:mm:ss format
+           YT
+               <Attributes>
+               link - an URL to the work on the YouTube platform, a string with at least one letter
+           Rank - a subjective floating point number which represent the quality of a work, form 0.5 to 5.0
+           Composer
+               <Attributes>
+               idref - a reference to the composer who made a certain work, xsd:IDREF type
+           Type
+               <Attributes>
+               idref - a reference to the composer who made a certain work, xsd:IDREF type
+           Types - the types of works, a tuple
+            <Elements>
+            Type - a single type from the Types tuple
+                <Attributes>
+                id - a unique idntificator, value from xsd:ID

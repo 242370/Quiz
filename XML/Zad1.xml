@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="Zad2.css" ?>
+<tns:Music author="Rafał Cybula" last_modified="2022-11-04"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:tns="http://www.Music.org"
+    xsi:schemaLocation="http://www.Music.org Schema.xsd">
+	<Composers>
+		<Composer id="c1">
+			<Name>Marcin</Name>
+			<Last_Name>Przybyłowicz</Last_Name>
+			<Nationality>Poland</Nationality>
+			<Birth_Date>
+				<Day>04</Day>
+				<Month>05</Month>
+				<Year>1985</Year>
+			</Birth_Date>
+		</Composer>
+		<Composer id="c2">
+			<Name>Ramin</Name>
+			<Last_Name>Djawadi</Last_Name>
+			<Nationality>Germany</Nationality>
+			<Birth_Date>
+				<Day>19</Day>
+				<Month>02</Month>
+				<Year>1974</Year>
+			</Birth_Date>
+		</Composer>
+		<Composer id="c3">
+			<Name>John</Name>
+			<Last_Name>Williams</Last_Name>
+			<Nationality>USA</Nationality>
+			<Birth_Date>
+				<Day>08</Day>
+				<Month>02</Month>
+				<Year>1932</Year>
+			</Birth_Date>
+		</Composer>
+		<Composer id="c4">
+			<Name>Hans</Name>
+			<Last_Name>Zimmer</Last_Name>
+			<Nationality>Germany</Nationality>
+			<Birth_Date>
+				<Day>12</Day>
+				<Month>09</Month>
+				<Year>1957</Year>
+			</Birth_Date>
+		</Composer>
+		<Composer id="c5">
+			<Name>Howard</Name>
+			<Last_Name>Shore</Last_Name>
+			<Nationality>Canada</Nationality>
+			<Birth_Date>
+				<Day>18</Day>
+				<Month>10</Month>
+				<Year>1946</Year>
+			</Birth_Date>
+		</Composer>
+		<Composer id="c6">
+			<Name>John</Name>
+			<Last_Name>Powell</Last_Name>
+			<Nationality>USA</Nationality>
+			<Birth_Date>
+				<Day>18</Day>
+				<Month>09</Month>
+				<Year>1963</Year>
+			</Birth_Date>
+		</Composer>
+		<Composer id="c7">
+			<Name>Patrick</Name>
+			<Last_Name>Doyle</Last_Name>
+			<Nationality>UK</Nationality>
+			<Birth_Date>
+				<Day>06</Day>
+				<Month>04</Month>
+				<Year>1953</Year>
+			</Birth_Date>
+		</Composer>
+		<Composer id="c8">
+			<Name>Alan</Name>
+			<Last_Name>Silvestri</Last_Name>
+			<Nationality>USA</Nationality>
+			<Birth_Date>
+				<Day>26</Day>
+				<Month>03</Month>
+				<Year>1950</Year>
+			</Birth_Date>
+		</Composer>
+		<Composer id="c9">
+			<Name>Brian</Name>
+			<Last_Name>Tyler</Last_Name>
+			<Nationality>USA</Nationality>
+			<Birth_Date>
+				<Day>08</Day>
+				<Month>05</Month>
+				<Year>1972</Year>
+			</Birth_Date>
+		</Composer>
+		<Composer id="c10">
+			<Name>Henry</Name>
+			<Last_Name>Jackson</Last_Name>
+			<Nationality>USA</Nationality>
+			<Birth_Date>
+				<Day>01</Day>
+				<Month>01</Month>
+				<Year>1974</Year>
+			</Birth_Date>
+		</Composer>
+		<Composer id="c11">
+			<Name>Michael</Name>
+			<Last_Name>Giacchino</Last_Name>
+			<Nationality>USA</Nationality>
+			<Birth_Date>
+				<Day>10</Day>
+				<Month>10</Month>
+				<Year>1967</Year>
+			</Birth_Date>
+		</Composer>
+		<Composer id="c12">
+			<Name>Ludwig</Name>
+			<Last_Name>Goransson</Last_Name>
+			<Nationality>Sweden</Nationality>
+			<Birth_Date>
+				<Day>01</Day>
+				<Month>09</Month>
+				<Year>1984</Year>
+			</Birth_Date>
+		</Composer>
+		<Composer id="c13">
+			<Name>Christophe</Name>
+			<Last_Name>Beck</Last_Name>
+			<Nationality>USA</Nationality>
+			<Birth_Date>
+				<Day>30</Day>
+				<Month>11</Month>
+				<Year>1972</Year>
+			</Birth_Date>
+		</Composer>
+		<Composer id="c14">
+			<Name>Antonín</Name>
+			<Last_Name>Dvořák</Last_Name>
+			<Nationality>Czech Republic</Nationality>
+			<Birth_Date>
+				<Day>08</Day>
+				<Month>09</Month>
+				<Year>1941</Year>
+			</Birth_Date>
+		</Composer>
+		<Composer id="c15">
+			<Name>Claude</Name>
+			<Last_Name>Debussy</Last_Name>
+			<Nationality>France</Nationality>
+			<Birth_Date>
+				<Day>22</Day>
+				<Month>08</Month>
+				<Year>1862</Year>
+			</Birth_Date>
+		</Composer>
+		<Composer id="c16">
+			<Name>Antonio</Name>
+			<Last_Name>Vivaldi</Last_Name>
+			<Nationality>Italy</Nationality>
+			<Birth_Date>
+				<Day>04</Day>
+				<Month>03</Month>
+				<Year>1678</Year>
+			</Birth_Date>
+		</Composer>
+		<Composer id="c17">
+			<Name>Steve</Name>
+			<Last_Name>Jablonsky</Last_Name>
+			<Nationality>USA</Nationality>
+			<Birth_Date>
+				<Day>09</Day>
+				<Month>10</Month>
+				<Year>1970</Year>
+			</Birth_Date>
+		</Composer>
+		<Composer id="c18">
+			<Name>Nicholas</Name>
+			<Last_Name>Hooper</Last_Name>
+			<Nationality>UK</Nationality>
+			<Birth_Date>
+				<Day>23</Day>
+				<Month>07</Month>
+				<Year>1952</Year>
+			</Birth_Date>
+		</Composer>
+		<Composer id="c19">
+			<Name>Alexandre</Name>
+			<Last_Name>Desplat</Last_Name>
+			<Nationality>France</Nationality>
+			<Birth_Date>
+				<Day>23</Day>
+				<Month>08</Month>
+				<Year>1961</Year>
+			</Birth_Date>
+		</Composer>
+		<Composer id="c20">
+			<Name>James</Name>
+			<Last_Name>Horner</Last_Name>
+			<Nationality>USA</Nationality>
+			<Birth_Date>
+				<Day>04</Day>
+				<Month>08</Month>
+				<Year>1953</Year>
+			</Birth_Date>
+		</Composer>
+		<Composer id="c21">
+			<Name>Steven</Name>
+			<Last_Name>Price</Last_Name>
+			<Nationality>UK</Nationality>
+			<Birth_Date>
+				<Day>22</Day>
+				<Month>04</Month>
+				<Year>1977</Year>
+			</Birth_Date>
+		</Composer>
+		<Composer id="c22">
+			<Name>Bear</Name>
+			<Last_Name>McCreary</Last_Name>
+			<Nationality>USA</Nationality>
+			<Birth_Date>
+				<Day>17</Day>
+				<Month>02</Month>
+				<Year>1979</Year>
+			</Birth_Date>
+		</Composer>
+		<Composer id="c23">
+			<Name>Jason</Name>
+			<Last_Name>Graves</Last_Name>
+			<Nationality>USA</Nationality>
+			<Birth_Date>
+				<Day>01</Day>
+				<Month>01</Month>
+				<Year>1973</Year>
+			</Birth_Date>
+		</Composer>
+	</Composers>
+	<Works>
+		<Work id="w1">
+			<Name>The Witcher 3</Name>
+			<Duration>03:31:46</Duration>
+			<YT link="GeraltOfRivia.mp3"/>
+			<Rank>5.0</Rank>
+			<Composer idref="c1"/>
+			<Type idref="t1"/> 
+		</Work>
+		<Work id="w2">
+			<Name>Game of Thrones season 2</Name>
+			<Duration>00:57:01</Duration>
+			<YT link="AC3.mp3"/>
+			<Rank>4.0</Rank>
+			<Composer idref="c2"/>
+			<Type idref="t2"/>
+		</Work>
+		<Work id="w3">
+			<Name>Star Wars: A New Hope</Name>
+			<Duration>01:16:27</Duration>
+			<YT link="https://www.youtube.com/watch?v=sDMPTZ7y1lE%26ab_channel=Kain%27sGamingChannel"/>
+			<Rank>4.0</Rank>
+			<Composer idref="c3"/>
+			<Type idref="t3"/>
+		</Work>
+		<Work id="w4">
+			<Name>The Fellowship of the Ring</Name>
+			<Duration>01:11:28</Duration>
+			<YT link="https://www.youtube.com/watch?v=ZkjGdG9JnnI%26ab_channel=rasmu96"/>
+			<Rank>5.0</Rank>
+			<Composer idref="c5"/>
+			<Type idref="t3"/>
+		</Work>
+		<Work id="w5">
+			<Name>How to train your dragon</Name>
+			<Duration>01:12:13</Duration>
+			<YT link="https://www.youtube.com/watch?v=sQxr-HeSp68%26ab_channel=PicsandPsalteryStudios"/>
+			<Rank>5.0</Rank>
+			<Composer idref="c6"/>
+			<Type idref="t3"/>
+		</Work>
+		<Work id="w6">
+			<Name>Gladiator</Name>
+			<Duration>01:01:45</Duration>
+			<YT link="https://www.youtube.com/watch?v=pmr_ORIqK0U%26ab_channel=MBgamer007"/>
+			<Rank>5.0</Rank>
+			<Composer idref="c4"/>
+			<Type idref="t3"/>
+		</Work>
+		<Work id="w7">
+			<Name>Interstellar</Name>
+			<Duration>02:19:23</Duration>
+			<YT link="https://www.youtube.com/watch?v=YF1eYbfbH5k%26ab_channel=WaterTowerMusic"/>
+			<Rank>5.0</Rank>
+			<Composer idref="c4"/>
+			<Type idref="t3"/>
+		</Work>
+		<Work id="w8">
+			<Name>Inception</Name>
+			<Duration>02:18:22</Duration>
+			<YT link="https://www.youtube.com/watch?v=vnkiVa4A-F8%26ab_channel=ForceSoundtrack"/>
+			<Rank>4.5</Rank>
+			<Composer idref="c4"/>
+			<Type idref="t3"/>
+		</Work>
+		<Work id="w9">
+			<Name>Harry Potter and the Philosopher's Stone</Name>
+			<Duration>02:51:59</Duration>
+			<YT link="https://www.youtube.com/watch?v=OO_I6jLt-hg%26ab_channel=StormSoundtrack"/>
+			<Rank>4.0</Rank>
+			<Composer idref="c3"/>
+			<Type idref="t3"/>
+		</Work>
+		<Work id="w10">
+			<Name>Braveheart</Name>
+			<Duration>02:09:06</Duration>
+			<YT link="https://www.youtube.com/watch?v=UAtdfAuLWsg%26ab_channel=DarthSoundtrack"/>
+			<Rank>5.0</Rank>
+			<Composer idref="c20"/>
+			<Type idref="t3"/>
+		</Work>
+		<Work id="w11">
+			<Name>Our Planet</Name>
+			<Duration>02:26:47</Duration>
+			<YT link="https://www.youtube.com/watch?v=Mtcoo3ZTTAk%26t=6377s%26ab_channel=12H"/>
+			<Rank>5.0</Rank>
+			<Composer idref="c21"/>
+			<Type idref="t2"/>
+		</Work>
+		<Work id="w12">
+			<Name>Black Sails</Name>
+			<Duration>01:19:23</Duration>
+			<YT link="https://www.youtube.com/watch?v=j2CmJMfyc_0%26ab_channel=TheVideoTFilm"/>
+			<Rank>4.0</Rank>
+			<Composer idref="c22"/>
+			<Type idref="t2"/>
+		</Work>
+		<Work id="w13">
+			<Name>Assassin's Crred IV</Name>
+			<Duration>01:41:58</Duration>
+			<YT link="https://www.youtube.com/watch?v=JYVMnLUZu9Y%26ab_channel=UbisoftMusic"/>
+			<Rank>5.0</Rank>
+			<Composer idref="c9"/>
+			<Type idref="t1"/>
+		</Work>
+		<Work id="w14">
+			<Name>God of War</Name>
+			<Duration>01:14:32</Duration>
+			<YT link="https://www.youtube.com/watch?v=rOmHpI0MMKE%26t=1772s%26ab_channel=JackOkami"/>
+			<Rank>5.0</Rank>
+			<Composer idref="c22"/>
+			<Type idref="t1"/>
+		</Work>
+		<Work id="w15">
+			<Name>Tomb Raider</Name>
+			<Duration>01:15:01</Duration>
+			<YT link="https://www.youtube.com/watch?v=-wR1xUHm4rs%26ab_channel=SoundtrackVideoGame"/>
+			<Rank>3.0</Rank>
+			<Composer idref="c23"/>
+			<Type idref="t1"/>
+		</Work>
+		<Types>
+			<Type id="t1">Video game</Type>
+			<Type id="t2">Series</Type>
+			<Type id="t3">Movie</Type>
+			<Type id="t4">Classical</Type>
+		</Types>
+	</Works>
+</tns:Music>

@@ -1,0 +1,84 @@
+body {
+    color: white;
+    background-color: black;
+    font-family: Amiri;
+}
+
+.rules {
+    font-size: 150%;
+    display: table;
+    border-color: white;
+    border-style: solid;
+    padding: 5px;
+    position: relative;
+    left: 23%;
+    width: 55%;
+}
+
+.start-game {
+    padding: 30px;
+}
+
+.start-button {
+    position: relative;
+    left: 41%;
+    width: 300px;
+    height: 200px;
+    font-size: 200%;
+}
+
+.score {
+    display: none;
+    font-size: 200%;
+}
+
+#question-text1 {
+    font-size: 150%;
+    display: none;
+    border-color: white;
+    border-style: solid;
+    padding: 5px;
+    position: relative;
+    left: 47%;
+    width: 55%;
+}
+
+#question-text2 {
+    font-size: 150%;
+    display: none;
+    border-color: white;
+    border-style: solid;
+    padding: 5px;
+    position: relative;
+    left: 43%;
+    width: 55%;
+}
+
+.options {
+    display: none;
+    position: relative;
+    left: 26%;
+    top: 150px;
+}
+
+.button {
+    left: 10%;
+    width: 400px;
+    height: 200px;
+    top: 150px;
+    font-size: 125%;
+}
+
+.button:disabled {
+    background-color: white;
+    color: black;
+}
+
+.firstButtons {
+    padding: 5px;
+}
+
+.secondButtons {
+    position: relative;
+    left: 3px;
+}

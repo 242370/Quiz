@@ -1,0 +1,43 @@
+body{
+    color:white;
+    background-image: url("Mass.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.Header:before{
+    display: block;
+    content: "Random image to meet the requirements: ";
+}
+
+.Liszt{
+    display:table;
+    border-width: 3px;
+    border-color: white;
+    border-style: solid;
+    margin: 5px;
+    width: 800px;
+}
+
+td{
+    border:1px solid white;
+}
+
+.Summary{
+    display:table;
+        border-width: 3px;
+        border-color: white;
+        border-style: solid;
+        margin: 5px;
+        width: 500px;
+}
+
+svg > path {
+	stroke: white; /* Colour */
+	stroke-width: 0.1; /* Thickness */
+	stroke-miterlimit: 2;
+}
+
+svg > text{
+    font-size: 10%;
+}

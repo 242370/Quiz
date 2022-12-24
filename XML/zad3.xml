@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Music>
+   <Date>2022-12-24</Date>
+   <Author>Rafał Cybula</Author>
+   <Works>
+      <Work>
+         <Id>w1</Id>
+         <Title>The Witcher 3</Title>
+         <Rank>5.0</Rank>
+         <URL>GeraltOfRivia.mp3</URL>
+         <Type>Video game</Type>
+         <Composer>Marcin Przybyłowicz (Poland)</Composer>
+      </Work>
+      <Work>
+         <Id>w2</Id>
+         <Title>Game of Thrones season 2</Title>
+         <Rank>4.0</Rank>
+         <URL>AC3.mp3</URL>
+         <Type>Series</Type>
+         <Composer>Ramin Djawadi (Germany)</Composer>
+      </Work>
+      <Work>
+         <Id>w3</Id>
+         <Title>Star Wars: A New Hope</Title>
+         <Rank>4.0</Rank>
+         <URL>https://www.youtube.com/watch?v=sDMPTZ7y1lE%26ab_channel=Kain%27sGamingChannel</URL>
+         <Type>Movie</Type>
+         <Composer>John Williams (USA)</Composer>
+      </Work>
+      <Work>
+         <Id>w4</Id>
+         <Title>The Fellowship of the Ring</Title>
+         <Rank>5.0</Rank>
+         <URL>https://www.youtube.com/watch?v=ZkjGdG9JnnI%26ab_channel=rasmu96</URL>
+         <Type>Movie</Type>
+         <Composer>Howard Shore (Canada)</Composer>
+      </Work>
+      <Work>
+         <Id>w5</Id>
+         <Title>How to train your dragon</Title>
+         <Rank>5.0</Rank>
+         <URL>https://www.youtube.com/watch?v=sQxr-HeSp68%26ab_channel=PicsandPsalteryStudios</URL>
+         <Type>Movie</Type>
+         <Composer>John Powell (USA)</Composer>
+      </Work>
+      <Work>
+         <Id>w6</Id>
+         <Title>Gladiator</Title>
+         <Rank>5.0</Rank>
+         <URL>https://www.youtube.com/watch?v=pmr_ORIqK0U%26ab_channel=MBgamer007</URL>
+         <Type>Movie</Type>
+         <Composer>Hans Zimmer (Germany)</Composer>
+      </Work>
+      <Work>
+         <Id>w7</Id>
+         <Title>Interstellar</Title>
+         <Rank>5.0</Rank>
+         <URL>https://www.youtube.com/watch?v=YF1eYbfbH5k%26ab_channel=WaterTowerMusic</URL>
+         <Type>Movie</Type>
+         <Composer>Hans Zimmer (Germany)</Composer>
+      </Work>
+      <Work>
+         <Id>w8</Id>
+         <Title>Inception</Title>
+         <Rank>4.5</Rank>
+         <URL>https://www.youtube.com/watch?v=vnkiVa4A-F8%26ab_channel=ForceSoundtrack</URL>
+         <Type>Movie</Type>
+         <Composer>Hans Zimmer (Germany)</Composer>
+      </Work>
+      <Work>
+         <Id>w9</Id>
+         <Title>Harry Potter and the Philosopher's Stone</Title>
+         <Rank>4.0</Rank>
+         <URL>https://www.youtube.com/watch?v=OO_I6jLt-hg%26ab_channel=StormSoundtrack</URL>
+         <Type>Movie</Type>
+         <Composer>John Williams (USA)</Composer>
+      </Work>
+      <Work>
+         <Id>w10</Id>
+         <Title>Braveheart</Title>
+         <Rank>5.0</Rank>
+         <URL>https://www.youtube.com/watch?v=UAtdfAuLWsg%26ab_channel=DarthSoundtrack</URL>
+         <Type>Movie</Type>
+         <Composer>James Horner (USA)</Composer>
+      </Work>
+      <Work>
+         <Id>w11</Id>
+         <Title>Our Planet</Title>
+         <Rank>5.0</Rank>
+         <URL>https://www.youtube.com/watch?v=Mtcoo3ZTTAk%26t=6377s%26ab_channel=12H</URL>
+         <Type>Series</Type>
+         <Composer>Steven Price (UK)</Composer>
+      </Work>
+      <Work>
+         <Id>w12</Id>
+         <Title>Black Sails</Title>
+         <Rank>4.0</Rank>
+         <URL>https://www.youtube.com/watch?v=j2CmJMfyc_0%26ab_channel=TheVideoTFilm</URL>
+         <Type>Series</Type>
+         <Composer>Bear McCreary (USA)</Composer>
+      </Work>
+      <Work>
+         <Id>w13</Id>
+         <Title>Assassin's Crred IV</Title>
+         <Rank>5.0</Rank>
+         <URL>https://www.youtube.com/watch?v=JYVMnLUZu9Y%26ab_channel=UbisoftMusic</URL>
+         <Type>Video game</Type>
+         <Composer>Brian Tyler (USA)</Composer>
+      </Work>
+      <Work>
+         <Id>w14</Id>
+         <Title>God of War</Title>
+         <Rank>5.0</Rank>
+         <URL>https://www.youtube.com/watch?v=rOmHpI0MMKE%26t=1772s%26ab_channel=JackOkami</URL>
+         <Type>Video game</Type>
+         <Composer>Bear McCreary (USA)</Composer>
+      </Work>
+      <Work>
+         <Id>w15</Id>
+         <Title>Tomb Raider</Title>
+         <Rank>3.0</Rank>
+         <URL>https://www.youtube.com/watch?v=-wR1xUHm4rs%26ab_channel=SoundtrackVideoGame</URL>
+         <Type>Video game</Type>
+         <Composer>Jason Graves (USA)</Composer>
+      </Work>
+   </Works>
+   <Count>15</Count>
+   <Types>
+      <Type>
+         <Type>Video game</Type>
+         <Count>4</Count>
+         <Ranks>
+            <Min>3</Min>
+            <Max>5</Max>
+            <Avg>4.5</Avg>
+         </Ranks>
+      </Type>
+      <Type>
+         <Type>Series</Type>
+         <Count>3</Count>
+         <Ranks>
+            <Min>4</Min>
+            <Max>5</Max>
+            <Avg>4.333333333333333</Avg>
+         </Ranks>
+      </Type>
+      <Type>
+         <Type>Movie</Type>
+         <Count>8</Count>
+         <Ranks>
+            <Min>4</Min>
+            <Max>5</Max>
+            <Avg>4.6875</Avg>
+         </Ranks>
+      </Type>
+   </Types>
+   <Ranks>
+      <Min>3</Min>
+      <Max>5</Max>
+      <Avg>4.566666666666666</Avg>
+   </Ranks>
+</Music>
