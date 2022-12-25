@@ -1,25 +1,30 @@
 let correct;
 let attempt;
 let step;
-const total = 5;
+const total = 15;
+const time = 25;
 let timeout;
 let pieces;
 let indices;
 let audio;
+let timer;
 
 function onStartButtonClick() {
+    audio.pause();
     document.getElementById("rules").style.display = "none";
     document.getElementById("start-game").style.display = "none";
     document.getElementById("score").style.display = "inline";
     document.getElementById("question-text1").style.display = "inline";
     document.getElementById("options").style.display = "block";
-    timeout = setTimeout(check, 25000, 0);
+    timeout = setTimeout(check, time * 1000, 0);
     indices = indices.sort((l, r) => 0.5 - Math.random());
     attempt = 1;
     step = 1;
     chosenFill();
     audio.src = "XML/mp3/" + pieces[indices[attempt - 1]].getElementsByTagName("URL")[0].textContent;
     audio.play();
+    document.getElementById("countdown").style.display = "block";
+    countdown();
 }
 
 function chosenFill() {
@@ -52,9 +57,9 @@ function chosenFill() {
 }
 
 function getRandomIndex(property, forbidden) {
-    let temp = Math.floor(Math.random() * total);
+    let temp = Math.floor(Math.random() * pieces.length);
     while (forbidden.includes(pieces[temp].getElementsByTagName(property)[0].textContent)) {
-        temp = Math.floor(Math.random() * total);
+        temp = Math.floor(Math.random() * pieces.length);
     }
     return temp;
 }
@@ -74,9 +79,16 @@ function init(xml) {
     document.getElementById("total-score").innerText = temp;
     document.getElementById("total-pieces").innerText = total;
     audio = document.getElementById("audio");
+    audio.muted = false;
+    //audio.play();
 }
 
 async function check(choice) {
+    clearTimeout(timer);
+    document.getElementById("circle").style.animation = "none";
+    if (document.getElementById('countdown-number').textContent == 1) {
+        document.getElementById('countdown-number').textContent = 0;
+    }
     switch (correct) {
         case 1:
             document.getElementById("b1").style.border = "#4CAF50 solid 5px";
@@ -113,7 +125,7 @@ async function check(choice) {
     document.getElementById("b2").disabled = true;
     document.getElementById("b3").disabled = true;
     document.getElementById("b4").disabled = true;
-    await new Promise(R => setTimeout(R, 2500));
+    await new Promise(R => setTimeout(R, time * 100));
     document.getElementById("b1").disabled = false;
     document.getElementById("b2").disabled = false;
     document.getElementById("b3").disabled = false;
@@ -147,5 +159,17 @@ async function check(choice) {
         audio.src = "XML/mp3/" + pieces[indices[attempt - 1]].getElementsByTagName("URL")[0].textContent;
         audio.play();
     }
-    timeout = setTimeout(check, 25000, 0);
+    timeout = setTimeout(check, time * 1000, 0);
+    countdown();
+}
+
+function countdown() {
+    let countdownNumberEl = document.getElementById('countdown-number');
+    let countdown = time;
+    countdownNumberEl.textContent = countdown;
+    document.getElementById("circle").style.animation = "countdown " + time + "s linear forwards";
+    timer = setInterval(function () {
+        --countdown;
+        countdownNumberEl.textContent = countdown;
+    }, 1000);
 }

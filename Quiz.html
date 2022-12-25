@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="Quiz.css"/>
     <script src="Quiz.js" type="text/javascript"></script>
 </head>
-<body onload="init('XML\\zad3.xml')">
+<body onload="init('XML/zad3.xml')">
 <div class="container" id="container">
     <div class="rules" id="rules">
         - After clicking the start button you will begin to hear one of the magnificent music pieces chosen by our
@@ -24,6 +24,7 @@
         Score:
         <span id="user-score">0</span> /
         <span id="total-score"></span>
+        <br/>
         Piece:
         <span id="piece">1</span> /
         <span id="total-pieces"></span>
@@ -44,7 +45,13 @@
                 <button id="b4" onclick="check(4)" class="button"></button>
             </div>
         </div>
-        <audio id="audio" src=""></audio>
+        <audio id="audio" src="XML/mp3/Interstellar.mp3" autoplay></audio>
+    </div>
+    <div id="countdown">
+        <div id="countdown-number"></div>
+        <svg>
+            <circle r="50" cx="57" cy="57" id="circle"></circle>
+        </svg>
     </div>
 </div>
 </body>
