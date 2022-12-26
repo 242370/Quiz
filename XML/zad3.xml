@@ -223,6 +223,46 @@
          <URL>Tyranny.mp3</URL>
          <Composer>Justin Bell (USA)</Composer>
       </Work>
+      <Work>
+         <Title>WoW: Mists of Pandaria</Title>
+         <URL>MistsOfPandaria.mp3</URL>
+         <Composer>Blizzard Sound Team (USA)</Composer>
+      </Work>
+      <Work>
+         <Title>Star Wars: The Empire Strikes Back</Title>
+         <URL>ImperialMarch.mp3</URL>
+         <Composer>John Williams (USA)</Composer>
+      </Work>
+      <Work>
+         <Title>Kung Fu Panda</Title>
+         <URL>OogwayAscends.mp3</URL>
+         <Composer>Hans Zimmer (Germany)</Composer>
+      </Work>
+      <Work>
+         <Title>Forrest Gump</Title>
+         <URL>ForrestGump.mp3</URL>
+         <Composer>Alan Silvestri (USA)</Composer>
+      </Work>
+      <Work>
+         <Title>Star Wars: The Clone Wars</Title>
+         <URL>TheClones.mp3</URL>
+         <Composer>Kevin Kiner (USA)</Composer>
+      </Work>
+      <Work>
+         <Title>Für Elise</Title>
+         <URL>FurElise.mp3</URL>
+         <Composer>Ludwig van Beethoven (Germany)</Composer>
+      </Work>
+      <Work>
+         <Title>Eine Kleine Nachtmusik</Title>
+         <URL>EineKleine.mp3</URL>
+         <Composer>Wolfgang Amadeus Mozart (Austria)</Composer>
+      </Work>
+      <Work>
+         <Title>Rondo Alla Turca</Title>
+         <URL>RondoAllaTurca.mp3</URL>
+         <Composer>Wolfgang Amadeus Mozart (Austria)</Composer>
+      </Work>
    </Works>
    <Count>15</Count>
    <Types>
