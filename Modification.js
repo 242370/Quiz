@@ -1,3 +1,4 @@
+let fileName = "XML/zad3.xml";
 let doc;
 let pieces;
 let fileContent;
@@ -10,8 +11,11 @@ function init(xml) {
     fileContent = doc.children[0];
     pieces = doc.getElementsByTagName("Work");
     let data = document.getElementById("table");
+    for (let i = data.rows.length - 1; i > 0 ; i--) {
+        data.deleteRow(i);
+    }
     for (let i = 0; i < pieces.length; i++) {
-        if(pieces[i].getAttribute("removed") == "yes")
+        if (pieces[i].getAttribute("removed") == "yes")
             continue;
         let row = data.insertRow(-1);
         let title = row.insertCell(0);
@@ -52,6 +56,7 @@ function init(xml) {
         cancelButton.style.display = "none";
         action.appendChild(cancelButton);
     }
+    document.getElementById("fileNameInput").value = xml;
 }
 
 function edit(index) {
@@ -63,6 +68,12 @@ function edit(index) {
     titleInput.id = "title" + index;
     composerInput.id = "composer" + index;
     fileInput.id = "file" + index;
+    if(row.cells[0].innerText.length > 0)
+    {
+        titleInput.size = row.cells[0].innerText.length;
+        composerInput.size = row.cells[1].innerText.length;
+        fileInput.size = row.cells[2].innerText.length;
+    }
     titleInput.value = row.cells[0].innerText;
     composerInput.value = row.cells[1].innerText;
     fileInput.value = row.cells[2].innerText;
@@ -136,9 +147,24 @@ function del(index) {
 function save(index) {
     let data = document.getElementById("table");
     let row = data.rows[index];
-    pieces[index - 1].getElementsByTagName("Title")[0].textContent = document.getElementById("title" + index).value;
-    pieces[index - 1].getElementsByTagName("Composer")[0].textContent = document.getElementById("composer" + index).value;
-    pieces[index - 1].getElementsByTagName("URL")[0].textContent = document.getElementById("file" + index).value;
+    let title = document.getElementById("title" + index).value;
+    let composer = document.getElementById("composer" + index).value;
+    let file = document.getElementById("file" + index).value;
+    if (title.length == 0) {
+        alert("You can't leave the title empty");
+        return;
+    }
+    if (composer.length == 0) {
+        alert("You can't leave the composer empty");
+        return;
+    }
+    if (file.length == 0 || !file.endsWith(".mp3")) {
+        alert("The file field has to be a non-empty .mp3 file");
+        return;
+    }
+    pieces[index - 1].getElementsByTagName("Title")[0].textContent = title;
+    pieces[index - 1].getElementsByTagName("Composer")[0].textContent = composer;
+    pieces[index - 1].getElementsByTagName("URL")[0].textContent = file;
     row.cells[0].innerText = pieces[index - 1].getElementsByTagName("Title")[0].textContent;
     row.cells[1].innerText = pieces[index - 1].getElementsByTagName("Composer")[0].textContent;
     row.cells[2].innerText = pieces[index - 1].getElementsByTagName("URL")[0].textContent;
@@ -151,9 +177,13 @@ function save(index) {
 function cancel(index) {
     let data = document.getElementById("table");
     let row = data.rows[index];
-    row.cells[0].innerText = pieces[index - 1].getElementsByTagName("Title")[0].textContent;
-    row.cells[1].innerText = pieces[index - 1].getElementsByTagName("Composer")[0].textContent;
-    row.cells[2].innerText = pieces[index - 1].getElementsByTagName("URL")[0].textContent;
+    if (pieces[index - 1].getElementsByTagName("Title")[0].textContent == "") {
+        del(index);
+    } else {
+        row.cells[0].innerText = pieces[index - 1].getElementsByTagName("Title")[0].textContent;
+        row.cells[1].innerText = pieces[index - 1].getElementsByTagName("Composer")[0].textContent;
+        row.cells[2].innerText = pieces[index - 1].getElementsByTagName("URL")[0].textContent;
+    }
     document.getElementById("save" + index).style.display = 'none';
     document.getElementById("cancel" + index).style.display = 'none';
     document.getElementById("edit" + index).style.display = 'inline';
@@ -171,6 +201,6 @@ function saveFile() {
     // powyższego pliku
     const aElement = document.createElement("a");
     aElement.href = URL.createObjectURL(blob);
-    aElement.download = "XML/test.xml";
+    aElement.download = "save.xml";
     aElement.click();
 }

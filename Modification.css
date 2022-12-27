@@ -19,3 +19,9 @@ table {
 td {
     border: solid;
 }
+
+button {
+    background-color: black;
+    color: white;
+    border: solid 2px;
+}
